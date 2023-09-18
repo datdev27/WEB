@@ -2,24 +2,21 @@
 <html>
 <head>
 <style>
-h1 {
-  font-size: 60px;
-}
-
-p {
-  font-size: 25px;
-  line-height: 50px;
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
 }
 </style>
 </head>
 <body>
 
-<h1>Tiêu đề 1</h1>
-<h2>Tiêu đề 2</h2>
-<p>Dòng văn.</p>
-<p>Dòng văn khác.</p>
+<h2>position: static;</h2>
+
+<p>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+
+<div class="static">
+This div element has position: static;
+</div>
 
 </body>
 </html>
-
-
