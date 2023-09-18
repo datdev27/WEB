@@ -3,25 +3,28 @@
 <head>
 <style>
 h1 {
-  text-align: center;
+  text-decoration: overline;
 }
 
 h2 {
-  text-align: left;
+  text-decoration: line-through;
 }
 
 h3 {
-  text-align: right;
+  text-decoration: underline;
+}
+
+p.ex {
+  text-decoration: overline underline;
 }
 </style>
 </head>
 <body>
 
-<h1>Dong 1 (center)</h1>
-<h2>Dong 2 (left)</h2>
-<h3>Dong 3 (right)</h3>
-
-<p> 3 dong lan luot la giua roi trai, phai</p>
+<h1>gach tren</h1>
+<h2>gach ngang dong chu</h2>
+<h3>gach chan</h3>
+<p class="ex">gach tren duoi</p>
 
 </body>
 </html>
