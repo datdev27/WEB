@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Font Awesome Icons</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<!--Get your own code at fontawesome.com-->
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
 </head>
 <body>
 
-<h1>Thư viện font</h1>
+<h2>CSS Buttons</h2>
 
-<p>Một số icon khác:</p>
-<i class="fas fa-cloud"></i>
-<i class="fas fa-heart"></i>
-<i class="fas fa-car"></i>
-<i class="fas fa-file"></i>
-<i class="fas fa-bars"></i>
-
-<p>Styled Font Awesome icons (size and color):</p>
-<i class="fas fa-cloud" style="font-size:24px;"></i>
-<i class="fas fa-cloud" style="font-size:36px;"></i>
-<i class="fas fa-cloud" style="font-size:48px;color:red;"></i>
-<i class="fas fa-cloud" style="font-size:60px;color:lightblue;"></i>
+<button>Nút mặc định</button>
+<a href="#" class="button">Dẫn tới link</a>
+<button class="button">Nút</button>
+<input type="button" class="button" value="Nút đầu vào">
 
 </body>
 </html>
