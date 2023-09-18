@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-div p {
-  background-color: yellow;
+<style> 
+input {
+  width: 100%;
 }
 </style>
 </head>
 <body>
 
-<h2>Descendant Selector</h2>
+<h2>A full-width input field</h2>
 
-<p>The descendant selector matches all elements that are descendants of a specified element.</p>
-
-<div>
-  <p>Đoạn 1 nằm trong thẻ div.</p>
-  <p>Đoạn 2 nằm trong thẻ div.</p>
-  <section><p>Paragraph 3 in the div.</p></section>
-</div>
-
-<p>Đoạn 4 k nằm trong thẻ div</p>
-<p>Đoạn 5 k nằm trong thẻ div</p>
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname">
+</form>
 
 </body>
 </html>
-
-
