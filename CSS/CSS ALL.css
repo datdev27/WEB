@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+div p {
+  background-color: yellow;
+}
+</style>
+</head>
 <body>
 
-<ul>
-  <li><a href="#Trang Chủ">Home</a></li>
-  <li><a href="#Mới">News</a></li>
-  <li><a href="#Liên Hệ">Contact</a></li>
-  <li><a href="#Thông Tin">About</a></li>
-</ul>
+<h2>Descendant Selector</h2>
+
+<p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+<div>
+  <p>Đoạn 1 nằm trong thẻ div.</p>
+  <p>Đoạn 2 nằm trong thẻ div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<p>Đoạn 4 k nằm trong thẻ div</p>
+<p>Đoạn 5 k nằm trong thẻ div</p>
 
 </body>
 </html>
