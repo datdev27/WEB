@@ -2,26 +2,16 @@
 <html>
 <head>
 <style>
-p.uppercase {
-  text-transform: uppercase;
-}
-
-p.lowercase {
-  text-transform: lowercase;
-}
-
-p.capitalize {
-  text-transform: capitalize;
+div {
+  padding: 70px;
+  border: 1px solid #4CAF50;
 }
 </style>
 </head>
 <body>
 
-<h1>Using the text-transform property</h1>
-
-<p class="uppercase">In hoa</p>
-<p class="lowercase">In thuong</p>
-<p class="capitalize">Viet hoa</p>
+<h2>CSS Padding</h2>
+<div>Phần tử này có lề là 70px</div>
 
 </body>
 </html>
