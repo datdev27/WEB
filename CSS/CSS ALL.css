@@ -2,37 +2,26 @@
 <html>
 <head>
 <style>
-div {
-  border: 1px solid gray;
-  padding: 8px;
-}
-
 h1 {
   text-align: center;
-  text-transform: uppercase;
-  color: #4CAF50;
 }
 
-p {
-  text-indent: 50px;
-  text-align: justify;
-  letter-spacing: 3px;
+h2 {
+  text-align: left;
 }
 
-a {
-  text-decoration: none;
-  color: #008CBA;
+h3 {
+  text-align: right;
 }
 </style>
 </head>
 <body>
 
-<div>
-  <h1>text formatting</h1>
-  <p>Đoạn văn này được định dạng bằng một số thuộc tính định dạng văn bản. Phần tiêu đề sử dụng thuộc tính text-align, text-transform và color.
-Đoạn văn được thụt đầu dòng, căn chỉnh, và khoảng cách giữa các ký tự được chỉ định. Gạch chân được bỏ bỏ từ phần văn bản có màu sắc này.
-  <a target="_blank" href="tryit.asp?filename=trycss_text">"Ban Thu Di"</a> link.</p>
-</div>
+<h1>Dong 1 (center)</h1>
+<h2>Dong 2 (left)</h2>
+<h3>Dong 3 (right)</h3>
+
+<p> 3 dong lan luot la giua roi trai, phai</p>
 
 </body>
 </html>
