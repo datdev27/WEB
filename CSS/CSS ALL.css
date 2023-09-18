@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-p {
-  text-align: center;
-  color: red;
-} 
-/* This is a single-line comment */
-</style>
-</head>
 <body>
 
-<p>Every paragraph will be affected by the style.</p>
-<p id="para1">Me too!</p>
-<p>And me!</p>
+<h1>Specify colors using HSL values</h1>
+
+<h2 style="background-color:hsl(0, 0%, 50%);">hsl(0, 100%, 50%)</h2>
+<h2 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h2>
+<h2 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h2>
+<h2 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h2>
+<h2 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h2>
+<h2 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h2>
 
 </body>
 </html>
+
+
+
+
+
+body {
+  background-color: lightblue;
+}
+
+/*Nguyễn Hồng Hà  
+/*  Giá trị HSL
+Trong CSS, một màu có thể được chỉ định bằng cách sử dụng màu sắc, độ bão hòa và độ sáng (HSL) ở dạng:
+hsl( màu sắc , độ bão hòa , độ sáng )
+Hue là một độ trên bánh xe màu từ 0 đến 360. 0 là đỏ, 120 là xanh lục và 240 là xanh lam.
+Độ bão hòa là một giá trị phần trăm. 0% có nghĩa là màu xám và 100% là màu đầy đủ.
+Độ nhẹ cũng là một tỷ lệ phần trăm. 0% là màu đen, 50% không sáng cũng không tối, 100% là màu trắng.*/
