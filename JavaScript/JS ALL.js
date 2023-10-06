@@ -9,5 +9,7 @@
     </script>
  </head> 
  <body>
+ <h1>1st JavaScript</h1>
+    <button onclick="hello()">Click Here !</button>
 </body>  
 </html>
