@@ -1,80 +1,100 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-          body {
-            font-family: Arial, sans-serif;
-            background-color: #9c5555;
-            margin: 0;
-            padding: 0;
-          }
-          .Total {
-            background-color: #488454;
-            border: 1px solid #928fb5;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            margin: 20px auto;
-            padding: 20px;
-            text-align: center;
-          }
-          label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-          }
-          input[type="number"] {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-          }
-          p {
-            font-weight: bold;
-            margin: 10px 0;
-          }
-          input[type="submit"] {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 3px;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-weight: bold;
-          }
-          input[type="submit"]:hover {
-            background-color: #0056b3;
-          }
-        </style>
-      </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng ký </title>
+</head>
 <body>
-<form class="Total">
-<div>
-    <label>Nhập số a:</label>
-  <input type="number" name="số a" id="a" required/>
-</div>
- <div>
-  <label>Nhập số b:</label>
-  <input type="number" name="số b" id="b" required />
- </div>
- <p>Tổng 2 số a và b là </p>
-  <input type="submit" value="Submit">
-</form> 
 
+  <h1>Đăng ký </h1>
+
+  <div class="form-group">
+    <label for="fullname">Họ tên</label>
+    <input type="text" name="fullname" id="fullname" placeholder="Họ và tên" required>
+  </div>
+
+  <div class="form-group">
+    <label for="username">Tên đăng nhập</label>
+    <input type="text" name="username" id="username" placeholder="Tên đăng nhập" required>
+  </div>
+
+  <div class="form-group">
+    <label for="password">Mật khẩu</label>
+    <input type="password" name="password" id="password" placeholder="Mật khẩu" required>
+  </div>
+
+  <div class="form-group">
+    <label for="repassword">Nhập lại mật khẩu</label>
+    <input type="password" name="repassword" id="repassword" placeholder="Nhập lại mật khẩu" required>
+  </div>
+
+  <div class="form-group">
+    <label for="country">Quốc tịch</label>
+    <select name="country" id="country">
+      <option value="VN">Việt Nam</option>
+      <option value="US">Hoa Kỳ</option>
+      <option value="UK">Anh Quốc</option>
+      <option value="JP">Nhật Bản</option>
+      <option value="CN">Trung Quốc</option>
+      <option value="GER">Đức</option> 
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Số điện thoại</label>
+    <input type="text" name="phone" id="phone" placeholder="Số điện thoại" required>
+  </div>
+
+  <div class="form-group">
+    <label for="question">Câu hỏi bảo mật</label>
+    <select name="question" id="question">
+      <option value="1">Bạn đặt tên cho thú cưng của mình là gì ?</option>
+      <option value="2">Mẹ bạn sinh ngày bao nhiêu ?</option>
+      <option value="3">Bạn ghét gì nhất ?</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="answer">Trả lời</label>
+    <input type="text" name="answer" id="answer" placeholder="Trả lời" required>
+  </div>
+  <button type="checkbox">kiểm tra</button>
+  <button type="submit">Đăng ký</button>
+
+
+</form>
 
 </body>
 </html>
 <script>
-    document.addEventListener('DOMContentLoaded', function(){
-        document.querySelector('.Total').onsubmit=tinhtong;
-    });
-
-function tinhtong(){
-   
-        const a = parseInt(document.querySelector('#a').value);
-        const b = parseInt(document.querySelector('#b').value);
-        var tong = a + b;
-        alert('Tổng hai số là :' + tong + ' ');
+    function checkForm() {
+  // Kiểm tra xem tất cả các trường nhập liệu đều đã được điền đầy đủ
+  var isValid = true;
+  var inputs = document.querySelectorAll("input[required]");
+  for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].value === "") {
+      isValid = false;
+      break;
     }
+  }
+
+  // Nếu không hợp lệ, hiển thị thông báo cho người dùng
+  if (!isValid) {
+    alert("Bạn chưa nhập đầy đủ thông tin. Vui lòng kiểm tra lại!");
+    return false;
+  }
+
+  // Nếu hợp lệ, trả về true để tiếp tục xử lý form
+  return true;
+}
+</script>
+<script>
+   document.addEventListener('DOMcontentLoaded',function(){
+    document.querySelector('.checkForm').onclick=const;
+   });
 </script>
