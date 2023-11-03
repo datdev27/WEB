@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>The XMLHttpRequest Object</h2>
-<button type="button" onclick="loadDoc()">Request data</button>
-<p id="demo"></p>
-
 <script>
-function loadDoc() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("demo").innerHTML = this.responseText;
-  }
-  xhttp.open("GET", "demo_get.asp");
-  xhttp.send();
-}
-</script>
-
-</body>
-</html>
+  $(document).ready(function(){
+    $("button").click(function(){
+      $("#div1").load("demo_test.txt");
+      $("#div1").load("demo_test.txt", function(responseTxt, statusTxt, xhr){
+        if(statusTxt == "success")
+          alert("External content loaded successfully!");
+        if(statusTxt == "error")
+          alert("Error: " + xhr.status + ": " + xhr.statusText);
+      });
+    });
+  });
+  </script>
