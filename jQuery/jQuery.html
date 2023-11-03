@@ -5,16 +5,20 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("#div1").load("demo_test.txt");
+    alert("Background color = " + $("p").css("background-color"));
   });
 });
 </script>
 </head>
 <body>
 
-<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+<h2>This is a heading</h2>
 
-<button>Get External Content</button>
+<p style="background-color:#ff0000">This is a paragraph.</p>
+<p style="background-color:#00ff00">This is a paragraph.</p>
+<p style="background-color:#0000ff">This is a paragraph.</p>
+
+<button>Return background-color of p</button>
 
 </body>
 </html>
