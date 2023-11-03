@@ -4,23 +4,28 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("button").click(function(){
-    $("#div1").remove();
+  $("#btn1").click(function(){
+    $("#test1").text("XInchao!");
+  });
+  $("#btn2").click(function(){
+    $("#test2").html("<b>XInchao!</b>");
+  });
+  $("#btn3").click(function(){
+    $("#test3").val("EM dat dz");
   });
 });
 </script>
 </head>
 <body>
 
-<div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+<p id="test1">2121051174</p>
+<p id="test2">2121051174</p>
 
-<p>Dat</p>
-<p>2121051174</p>
+<p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
 
-</div>
-<br>
-
-<button>Remove div element</button>
+<button id="btn1">Set Text</button>
+<button id="btn2">Set HTML</button>
+<button id="btn3">Set Value</button>
 
 </body>
 </html>
