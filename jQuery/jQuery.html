@@ -4,29 +4,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script> 
 $(document).ready(function(){
-  $("#flip").click(function(){
-    $("#panel").slideDown("slow");
+  $("button").click(function(){
+    $("div").animate({left: '250px'});
   });
 });
-</script>
-<style> 
-#panel, #flip {
-  padding: 5px;
-  text-align: center;
-  background-color: #e5eecc;
-  border: solid 1px #c3c3c3;
-}
-
-#panel {
-  padding: 50px;
-  display: none;
-}
-</style>
+</script> 
 </head>
 <body>
- 
-<div id="flip">Click to slide down panel</div>
-<div id="panel">Toi la dat</div>
+
+<button>Start Animation</button>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
 
 </body>
 </html>
