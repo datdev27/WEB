@@ -1,8 +1,8 @@
 <?php
-echo "MY First Page"
-echo "<h3>HELLO</h3>"
-echo"<select>"
-echo "<option>1</option>"
-echo "<option>2</option>"
-echo "<select></select>"
+    $subject = "Lap trinh ung dung web";
+    $universityName = "HUMG";
+    $firstNumber = 2;
+    $secondNumber = 2;
+
+    echo "Hoc". $subject. "o phong 502 tai truong". $universityName. "<br>";
 ?>
