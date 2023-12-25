@@ -1,0 +1,71 @@
+body {
+    background-image: url(https://i.pinimg.com/564x/ba/5d/ab/ba5dab6bd5b5b55fed490a6cde0e9515.jpg);
+}
+a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none !important;
+    background-color: #4CAF50;
+    color: white !important;
+    border-radius: 4px;
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Định dạng container chứa form */
+.container {
+    background-image: url(https://i.pinimg.com/564x/d2/0a/dd/d20adddbc1722b94fd92c98e232d3e22.jpg);
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Nền trắng cho container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng form nhập điểm */
+form {
+    text-align: left;
+}
+
+/* Định dạng input và nút submit */
+input[type="text"], input[type="submit"] {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Định dạng bảng hiển thị điểm */
+.table {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}

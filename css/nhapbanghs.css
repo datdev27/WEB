@@ -1,0 +1,89 @@
+body {
+    background-image: url(https://i.pinimg.com/564x/ef/29/de/ef29deeff420e18ed41c7606c2c0402b.jpg);
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Nền trắng cho container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(https://i.pinimg.com/564x/d2/0a/dd/d20adddbc1722b94fd92c98e232d3e22.jpg);
+}
+a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none !important;
+    background-color: #417ab2;
+    color: white !important;
+    border-radius: 4px;
+}
+h1 {
+    color: #417ab2 !important; 
+    text-align: center;
+    
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #417ab2; 
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #417ab2; /* Màu xanh lam nhạt khi rê chuột qua nút submit */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Đường kẻ dưới cho từng hàng */
+}
+
+th {
+    background-color: #417ab2; /* Màu xanh lam cho dòng tiêu đề */
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #417ab2; /* Màu xanh lam cho liên kết */
+}
+
+a:hover {
+    text-decoration: none; 
+}
+
+.btn-danger {
+    background-color: #dc3545; 
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Màu đỏ nhạt khi rê chuột qua nút xóa */
+}

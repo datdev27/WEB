@@ -1,0 +1,62 @@
+body {
+    background-image: url(https://i.pinimg.com/564x/ef/29/de/ef29deeff420e18ed41c7606c2c0402b.jpg);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 200px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(https://i.pinimg.com/564x/d2/0a/dd/d20adddbc1722b94fd92c98e232d3e22.jpg);
+    background-size: cover; 
+}
+a {
+    text-decoration: none !important;
+}
+h1 {
+    color: #417ab2 !important;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px; /* Khoảng cách giữa h1 và bảng */
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Đường biên cho ô bảng */
+    padding: 8px; /* Khoảng cách giữa nội dung và biên ô */
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Màu nền cho hàng tiêu đề */
+}
+
+
+/* Màu nền cho nút Sửa và Xóa */
+a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+}
+
+a.btn-danger {
+    background-color: #f44336;
+}
+
+a:hover {
+    background-color: #45a049;
+}
+
+a.btn-danger:hover {
+    background-color: #d32f2f;
+}
